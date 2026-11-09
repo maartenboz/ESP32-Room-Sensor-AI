@@ -2,6 +2,14 @@
 
 An open-source ESP32-S3 room sensor and control board designed in KiCad 10. The board measures temperature and relative humidity and provides programmable buttons, potentiometers, LEDs, USB-C power, USB-UART communication and automatic firmware download/reset control.
 
+## Why this project exists
+
+This board was created as an experiment: how far can an AI coding agent go when it is given access to KiCad through an MCP server? The complete engineering workflow was AI-driven—from reading the initial brief and selecting parts to drawing the schematic, assigning footprints, placing and routing the PCB, running checks, producing documentation and publishing this repository. The human supplied the requirements, approved the plan and handled the GitHub login; the board itself was not manually drawn in KiCad by the human.
+
+The experiment used **OpenAI Codex with a GPT-5-based model**, the `KiCad-agentic` MCP server, KiCad 10 CLI/API tooling and Freerouting. See the [AI build log](docs/AI_BUILD_LOG.md) for the short workflow, limitations and measurable run information. The complete [original Dutch prompt](docs/ORIGINAL_PROMPT.md) is preserved with the project.
+
+This is an AI-generated engineering experiment, not proof that the design is production-ready. Automated checks and a plausible layout do not replace review by an experienced hardware engineer or testing of a manufactured prototype.
+
 ![Isometric PCB render](docs/images/pcb-isometric.png)
 
 ## Features
@@ -30,6 +38,8 @@ An open-source ESP32-S3 room sensor and control board designed in KiCad 10. The 
 - [GPIO map](docs/GPIO_MAP.md)
 - [Design notes](docs/DESIGN_NOTES.md)
 - [Verification record](docs/VERIFICATION.md)
+- [AI build log and provenance](docs/AI_BUILD_LOG.md)
+- [Original project prompt](docs/ORIGINAL_PROMPT.md)
 
 Open `KiCad_MCP_Test.kicad_pro` with KiCad 10.0.8 or newer. The editable schematic and PCB sources are included; the PDF and PNG files are convenience release artifacts and do not replace the KiCad source.
 
@@ -48,6 +58,14 @@ The creator-controlled hardware design sources and documentation are released un
 # ESP32-kamersensor AI
 
 Dit is een open-source ESP32-S3-kamersensor en bedieningsprint, ontworpen met KiCad 10. Het bord meet temperatuur en relatieve luchtvochtigheid en bevat programmeerbare knoppen, potentiometers en leds. Voeding, programmeren en seriële communicatie verlopen via USB-C.
+
+## Waarom dit project bestaat
+
+Dit bord is gemaakt als experiment: hoe ver kan een AI-codingagent komen wanneer die via een MCP-server toegang krijgt tot KiCad? De volledige engineeringworkflow werd door AI uitgevoerd—van het lezen van de opdracht en de componentkeuze tot het tekenen van het schema, toewijzen van footprints, plaatsen en routeren van de PCB, uitvoeren van controles, schrijven van documentatie en publiceren van deze repository. De mens leverde de eisen, keurde het plan goed en verzorgde de GitHub-login; het bord is niet handmatig door de mens in KiCad getekend.
+
+Voor het experiment zijn **OpenAI Codex met een GPT-5-gebaseerd model**, de `KiCad-agentic` MCP-server, KiCad 10 CLI/API-tools en Freerouting gebruikt. Zie het [AI-bouwlogboek](docs/AI_BUILD_LOG.md) voor de beknopte werkwijze, beperkingen en meetbare uitvoeringsinformatie. De volledige [oorspronkelijke Nederlandstalige prompt](docs/ORIGINAL_PROMPT.md) is eveneens bewaard.
+
+Dit is een door AI gegenereerd engineeringexperiment, geen bewijs dat het ontwerp productierijp is. Geautomatiseerde controles en een aannemelijke layout vervangen geen beoordeling door een ervaren hardware-engineer of tests op een geproduceerd prototype.
 
 ![Isometrische PCB-render](docs/images/pcb-isometric.png)
 
@@ -77,6 +95,8 @@ Dit is een open-source ESP32-S3-kamersensor en bedieningsprint, ontworpen met Ki
 - [GPIO-toewijzing](docs/GPIO_MAP.md)
 - [Ontwerpnotities](docs/DESIGN_NOTES.md)
 - [Verificatierapport](docs/VERIFICATION.md)
+- [AI-bouwlogboek en herkomst](docs/AI_BUILD_LOG.md)
+- [Oorspronkelijke projectprompt](docs/ORIGINAL_PROMPT.md)
 
 Open `KiCad_MCP_Test.kicad_pro` met KiCad 10.0.8 of nieuwer. De bewerkbare schema- en PCB-bronnen zijn opgenomen; PDF- en PNG-bestanden zijn aanvullende release-artifacts.
 
