@@ -1,0 +1,18 @@
+# KiCad local state and locks
+*.kicad_prl
+~*.lck
+_autosave-*
+*-backups/
+*.bak
+*.tmp
+*~
+
+# Local history and generated analysis
+.history/
+analysis/
+*.rpt
+
+# OS/editor metadata
+.DS_Store
+Thumbs.db
+
